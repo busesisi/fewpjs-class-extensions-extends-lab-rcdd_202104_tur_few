@@ -17,7 +17,7 @@ class Polygon {
         return sum
       }
 
-  }// Your code here
+  }
 
   class Triangle extends Polygon {
 

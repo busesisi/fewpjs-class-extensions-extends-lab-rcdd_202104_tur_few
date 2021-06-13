@@ -20,7 +20,7 @@ class Polygon {
   }// Your code here
 
   class Triangle extends Polygon {
-  
+
     get isValid() {
       if (!Array.isArray(this.sides)) return;
       if (this.count !== 3) return;
@@ -30,9 +30,9 @@ class Polygon {
       return ((side1 + side2 > side3) && (side1 + side3 > side2) && (side2 + side3 > side1))
     }
   }
-  
+
   class Square extends Polygon {
-  
+
     get isValid() {
       if (!Array.isArray(this.sides)) return;
       if (this.count !== 4) return;
@@ -42,11 +42,10 @@ class Polygon {
       let side4 = this.sides[3]
       return ((side1 === side2) && (side1 === side3) && (side1 === side4))
     }
-  
+
     get area() {
       if (!Array.isArray(this.sides)) return;
       if (this.count !== 4) return;
       return this.sides[0] * this.sides[0]
     }
   }
-  

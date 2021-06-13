@@ -7,7 +7,7 @@ class Polygon {
     get countSides() {
         return this.sides.length
       }
-    
+
       get perimeter() {
         if (!Array.isArray(this.sides)) return;
         let sum = 0;
@@ -16,7 +16,7 @@ class Polygon {
         }
         return sum
       }
-    
+
   }// Your code here
 
 
